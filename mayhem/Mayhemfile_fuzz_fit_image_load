@@ -1,0 +1,9 @@
+project: savantenvs/u-boot
+target: fuzz_fit_image_load
+cmds:
+  - cmd: /mayhem/fuzz_fit_image_load
+    libfuzzer: true
+    timeout: 30
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_fit_image_load/testsuite
