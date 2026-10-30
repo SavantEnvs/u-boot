@@ -1,0 +1,6 @@
+project: savantenvs/u-boot
+target: fuzz_btrfs
+cmds:
+  - cmd: /mayhem/fuzz_btrfs
+    libfuzzer: true
+    timeout: 30
