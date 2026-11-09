@@ -1,0 +1,2 @@
+# upstream marks everything "text eol=lf"; seeds are binary and must be committed byte-for-byte
+fuzz_*/testsuite/* binary
